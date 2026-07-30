@@ -9,67 +9,52 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<!-- HOME PAGE -->
+<!-- HOME -->
 
-<div id="homePage" class="page">
+<div id="home" class="home">
 
-<div class="overlay">
+<div class="content">
 
-<h1>🏢 Navigator Bangunan</h1>
+<h1>🏫 Navigator Bangunan</h1>
 
-<p>Pilih destinasi anda dengan mudah</p>
+<p>Selamat Datang</p>
 
-<div class="emoji">
+<div class="icon">
 
-🏫 🏢 🚻 ☕ 📚 🧑‍💼
-
-</div>
-
-<button onclick="openMap()">
-Mula Navigasi
-</button>
+🏢 🚻 📚 ☕ 🕌
 
 </div>
 
+<button id="startBtn">MULA NAVIGASI</button>
+
 </div>
 
-<!-- MAP PAGE -->
+</div>
 
-<div id="mapPage" class="page hidden">
+<!-- MAP -->
+
+<div id="map" class="map">
 
 <h2>Pelan Lantai</h2>
 
-<div class="map-container">
+<div class="floor-container">
 
-<img src="images/floorplan.png" class="floor">
+<img src="images/floorplan.png" alt="Pelan Lantai">
 
-<button class="location pejabat"
-onclick="showPlace('Pejabat')">
-📍
-</button>
+<button class="pin pejabat">📍</button>
 
-<button class="location tandas"
-onclick="showPlace('Tandas')">
-🚻
-</button>
+<button class="pin tandas">🚻</button>
 
-<button class="location surau"
-onclick="showPlace('Surau')">
-🕌
-</button>
+<button class="pin surau">🕌</button>
 
-<button class="location bilik"
-onclick="showPlace('Bilik Mesyuarat')">
-🏢
-</button>
+<button class="pin bilik">🏢</button>
 
 </div>
 
-<button class="back" onclick="goHome()">
-⬅ Kembali
-</button>
+<button id="backBtn">KEMBALI</button>
 
 </div>
 
