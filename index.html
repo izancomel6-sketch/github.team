@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Navigator Bangunan</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HOME PAGE -->
+
+<div id="homePage" class="page">
+
+<div class="overlay">
+
+<h1>🏢 Navigator Bangunan</h1>
+
+<p>Pilih destinasi anda dengan mudah</p>
+
+<div class="emoji">
+
+🏫 🏢 🚻 ☕ 📚 🧑‍💼
+
+</div>
+
+<button onclick="openMap()">
+Mula Navigasi
+</button>
+
+</div>
+
+</div>
+
+<!-- MAP PAGE -->
+
+<div id="mapPage" class="page hidden">
+
+<h2>Pelan Lantai</h2>
+
+<div class="map-container">
+
+<img src="images/floorplan.png" class="floor">
+
+<button class="location pejabat"
+onclick="showPlace('Pejabat')">
+📍
+</button>
+
+<button class="location tandas"
+onclick="showPlace('Tandas')">
+🚻
+</button>
+
+<button class="location surau"
+onclick="showPlace('Surau')">
+🕌
+</button>
+
+<button class="location bilik"
+onclick="showPlace('Bilik Mesyuarat')">
+🏢
+</button>
+
+</div>
+
+<button class="back" onclick="goHome()">
+⬅ Kembali
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
